@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>B-BBEE</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#head').load('head.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#navbar').load('nav-bar.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+  <div id="head"></div>
+
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<!-- Start -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <div class="row">
+    <h1>Broad Based Black Economic Empowerment</h1>
+  </div>
+  <div class="row">
+    <div class="col-8">      
+      <p>In South Africa, OPTIC COPPER NETWORK SOLUTION is a LEVEL 1 contributor and is motivated by the potential to be harnessed through celebrating diversity and incorporating empowerment into its business culture. It supports the BEE Act and the Codes of Good Practice for B-BBEE and actively participated in the development of the Construction Sector Charter.</p>
+    </div>
+    <div class="col-4">
+      <img src="media/bee.jpg" width="400px">
+    </div>
+  </div>
+</div>
+</div>
+<!-- End -->
+
+<div id="footer"></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	const $dropdown = $(".dropdown");
+	const $dropdownToggle = $(".dropdown-toggle");
+	const $dropdownMenu = $(".dropdown-menu");
+	const showClass = "show";
+	 
+	$(window).on("load resize", function() {
+	  if (this.matchMedia("(min-width: 768px)").matches) {
+	    $dropdown.hover(
+	      function() {
+	        const $this = $(this);
+	        $this.addClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "true");
+	        $this.find($dropdownMenu).addClass(showClass);
+	      },
+	      function() {
+	        const $this = $(this);
+	        $this.removeClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "false");
+	        $this.find($dropdownMenu).removeClass(showClass);
+	      }
+	    );
+	  } else {
+	    $dropdown.off("mouseenter mouseleave");
+	  }
+	});
+</script>

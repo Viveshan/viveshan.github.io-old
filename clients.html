@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clients</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#head').load('head.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#navbar').load('nav-bar.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+  <div id="head"></div>
+
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<!-- Start -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Clients</h1>      
+  <p>Optic Copper Network Solutions is one of the leading in the fiber repair and maintenance sector.......
+  We Service a wide variety of clients throughout SA</p>
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>DFA - Dark Fiber Africa</h1>
+  <img src="media/dfa.png">      
+  <p>DFA is.....We handle their</p>
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Bidfreight Port Operations</h1>
+  <img src="media/bpo.png">      
+  <p>BPO is .....</p>
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Transnet</h1>
+  <img src="media/transnet.png" height="200px">      
+  <p>Transnet is .....</p>
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Dp World</h1>
+  <img src="media/dpworld.svg">      
+  <p>Dp World is .....</p>
+</div>
+</div>
+
+<!-- ENd -->
+
+<div id="footer"></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	const $dropdown = $(".dropdown");
+	const $dropdownToggle = $(".dropdown-toggle");
+	const $dropdownMenu = $(".dropdown-menu");
+	const showClass = "show";
+	 
+	$(window).on("load resize", function() {
+	  if (this.matchMedia("(min-width: 768px)").matches) {
+	    $dropdown.hover(
+	      function() {
+	        const $this = $(this);
+	        $this.addClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "true");
+	        $this.find($dropdownMenu).addClass(showClass);
+	      },
+	      function() {
+	        const $this = $(this);
+	        $this.removeClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "false");
+	        $this.find($dropdownMenu).removeClass(showClass);
+	      }
+	    );
+	  } else {
+	    $dropdown.off("mouseenter mouseleave");
+	  }
+	});
+</script>

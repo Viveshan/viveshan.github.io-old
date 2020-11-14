@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leadership</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#head').load('head.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#navbar').load('nav-bar.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+  <div id="head"></div>
+
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<!-- Start -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Leadership</h1>      
+  <p>Optic Copper Network Solutions Leadership consists of a team of highly skilled individuals.......</p>
+</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Management</h1>      
+  <p>Optic Copper Network Solutions Leadership consists of a team of highly skilled individuals.......</p>
+</div>
+</div>
+
+<div class="container">  
+  <div class="card bg-light mb-3 col-12">
+    <div class="row">
+      <div class="card-header col-6 border">
+        <img src="media/generic_profile_circle.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body col-6 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-body col-12 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Health & Safety</h1>      
+  <p>Optic Copper Network Solutions Leadership consists of a team of highly skilled individuals.......</p>
+</div>
+</div>
+
+<div class="container">  
+  <div class="card bg-light mb-3 col-12">
+    <div class="row">
+      <div class="card-header col-6 border">
+        <img src="media/generic_profile_circle.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body col-6 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-body col-12 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1>Technical Staff</h1>      
+  <p>Optic Copper Network Solutions Leadership consists of a team of highly skilled individuals.......</p>
+</div>
+</div>
+
+<div class="container">  
+  <div class="card bg-light mb-3 col-12">
+    <div class="row">
+      <div class="card-header col-6 border">
+        <img src="media/generic_profile_circle.png" class="card-img" alt="...">
+      </div>
+      <div class="card-body col-6 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-body col-12 border">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- ENd -->
+
+<div id="footer"></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	const $dropdown = $(".dropdown");
+	const $dropdownToggle = $(".dropdown-toggle");
+	const $dropdownMenu = $(".dropdown-menu");
+	const showClass = "show";
+	 
+	$(window).on("load resize", function() {
+	  if (this.matchMedia("(min-width: 768px)").matches) {
+	    $dropdown.hover(
+	      function() {
+	        const $this = $(this);
+	        $this.addClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "true");
+	        $this.find($dropdownMenu).addClass(showClass);
+	      },
+	      function() {
+	        const $this = $(this);
+	        $this.removeClass(showClass);
+	        $this.find($dropdownToggle).attr("aria-expanded", "false");
+	        $this.find($dropdownMenu).removeClass(showClass);
+	      }
+	    );
+	  } else {
+	    $dropdown.off("mouseenter mouseleave");
+	  }
+	});
+</script>

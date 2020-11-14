@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Way Radio</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#head').load('head.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#navbar').load('nav-bar.html');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+  <div id="head"></div>
+
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<!-- Start -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h2>Two Way Radio Communication</h2>
+  <p>Optic Copper Network Solutions provide solutions from simple analogue systems to state of the art digital trunking solutions and has focused on providing Motorola solutions and products. We supply and install radios, repeaters & antennas and have designed and installed Motorola Capacity Plus systems.</p>
+  
+  <p>Optic Copper Network Solutions is a Motorola Solutions Partner.</p>
+  <br>
+  <div class="row justify-content-md-center">
+    <img src="media/motorola.png">
+  </div>
+</div>
+</div>
+<!-- ENd -->
+
+<div id="footer"></div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+  const $dropdown = $(".dropdown");
+  const $dropdownToggle = $(".dropdown-toggle");
+  const $dropdownMenu = $(".dropdown-menu");
+  const showClass = "show";
+   
+  $(window).on("load resize", function() {
+    if (this.matchMedia("(min-width: 768px)").matches) {
+      $dropdown.hover(
+        function() {
+          const $this = $(this);
+          $this.addClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "true");
+          $this.find($dropdownMenu).addClass(showClass);
+        },
+        function() {
+          const $this = $(this);
+          $this.removeClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "false");
+          $this.find($dropdownMenu).removeClass(showClass);
+        }
+      );
+    } else {
+      $dropdown.off("mouseenter mouseleave");
+    }
+  });
+</script>
