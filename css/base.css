@@ -1,3 +1,40 @@
+/*changes drop shadow in navbar when tab key used to toggle through menu*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.navbar-brand:focus,
+.navbar-brand:active{
+    outline: none;
+    box-shadow: none; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.dropdown-item:focus,
+.dropdown-item:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+    background-color: #4d4646;
+}
+
+.nav-item:focus,
+.nav-item:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+
+.nav-link:focus,
+.nav-link:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+
+.dropdown-menu:focus,
+.dropdown-menu:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+/**/
 /*Adds padding after navbar depending on screen size*/
 body {
     padding-top: 100px; /* more space under the menu */
