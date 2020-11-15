@@ -1,0 +1,64 @@
+/*changes drop shadow in navbar when tab key used to toggle through menu*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.navbar-brand:focus,
+.navbar-brand:active{
+    outline: none;
+    box-shadow: none; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.dropdown-item:focus,
+.dropdown-item:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+    background-color: #4d4646;
+}
+
+.nav-item:focus,
+.nav-item:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+
+.nav-link:focus,
+.nav-link:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+
+.dropdown-menu:focus,
+.dropdown-menu:active{
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #ffffff; /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+/**/
+
+/*Makes Drop down menu scrollable*/
+@media (max-width: 500px) {
+    .dropdown-menu{
+          max-height:200px;
+          overflow-y:auto;
+       }
+    }
+/**/
+
+/*make dropdown trangle toggle translate on hover*/
+.navbar .nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+/**/
