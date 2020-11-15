@@ -11,8 +11,8 @@ body {
 
 footer {
   background: #f2f2f2;
-  background: -webkit-linear-gradient(59deg, #272727, #6c6c6c);
-  background: linear-gradient(59deg, #272727, #6c6c6c);
+  /*background: -webkit-linear-gradient(59deg, #272727, #6c6c6c);
+  background: linear-gradient(59deg, #272727, #6c6c6c);*/
   color: white;
   margin-top:100px;
   position: absolute;

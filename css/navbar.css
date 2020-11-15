@@ -43,6 +43,15 @@
 }
 /**/
 
+/*Makes Drop down menu scrollable*/
+@media (max-width: 500px) {
+    .dropdown-menu{
+          max-height:200px;
+          overflow-y:auto;
+       }
+    }
+/**/
+
 /*make dropdown trangle toggle translate on hover*/
 .navbar .nav-item:not(:last-child) {
   margin-right: 35px;
