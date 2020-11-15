@@ -36,6 +36,13 @@
 }
 /**/
 
+/*Need this to allow scrolling navbar, else content behind navbar dropdown scrolls and not nav bar links*/
+.navbar-collapse {
+  max-height: 280px;
+  overflow-y: auto;
+}
+/**/
+
 /*Makes Drop down menu scrollable*/
 @media (max-width: 500px) {
     .dropdown-menu{
